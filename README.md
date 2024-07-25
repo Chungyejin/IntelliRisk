@@ -7,3 +7,4 @@ Tema: Montar um site de medição de risco de epidemias de dengue em determinada
 Sensores utilizados: Sensor de Umidade e Sensor de Temperatura
 
 Atuadores utilizados: Leds e LCD
+
