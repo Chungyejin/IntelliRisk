@@ -1,12 +1,13 @@
 # IntelliRisk
-Trabalho por: Ana Flávia, Isabella Berkembrock, Michele Cristina Otta, Yejin Chung
+Work by: Ana Flávia, Isabella Berkembrock, Michele Cristina Otta, Yejin Chung
 
-Projeto semestral da aula experiência criativa 3 período
-Tema: Montar um site de medição de risco de epidemias de dengue em determinadas regiões, através de medições de temperatura e de umidade.
+Semester project for the 3rd period creative experience class. 
 
-Sensores utilizados: Sensor de Umidade e Sensor de Temperatura
+Topic: Setting up a website to measure the risk of dengue epidemics in certain regions, through temperature and humidity measurements.
 
-Atuadores utilizados: Leds e LCD
+Sensors used: Humidity Sensor and Temperature Sensor
+
+Actuators used: LEDs and LCD
 
 ![스크린샷 2024-07-25 203035](https://github.com/user-attachments/assets/638825a6-7b35-4d36-8c6a-6f54e289bc61)
 ![스크린샷 2024-07-25 203105](https://github.com/user-attachments/assets/0316fda4-4dcb-4a0d-9499-e9d91f2c8fae)
