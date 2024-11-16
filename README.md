@@ -1,4 +1,9 @@
 # IntelliRisk
+
+This project is available in multiple languages.
+- [한국어](README.ko.md)
+- [Português](README.pt.md)
+  
 Work by: Ana Flávia, Isabella Berkembrock, Michele Cristina Otta, Yejin Chung
 
 Semester project for the 3rd period creative experience class. 
