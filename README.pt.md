@@ -2,7 +2,7 @@
 
 Este projeto está disponível em vários idiomas.
 - [한국어](README.ko.md)
-- [Português](README.pt.md)
+- [English](README.md)
 
   
 Trabalho de: Ana Flávia, Isabella Berkembrock, Michele Cristina Otta, Yejin Chung
