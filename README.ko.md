@@ -16,7 +16,7 @@
 
 사용 액추에이터: LED 및 LCD
 
-사용언어: HTML,CSS,PYTHON
+주요사용언어: HTML,CSS,PYTHON
 
 ![스크린샷 2024-07-25 203035](https://github.com/user-attachments/assets/638825a6-7b35-4d36-8c6a-6f54e289bc61)
 ![스크린샷 2024-07-25 203105](https://github.com/user-attachments/assets/0316fda4-4dcb-4a0d-9499-e9d91f2c8fae)
