@@ -8,9 +8,7 @@
   
 팀원: Ana Flávia, Isabella Berkembrock, Michele Cristina Otta, Yejin Chung
 
-3학기 창의적 경험 수업을 위한 학기 프로젝트.
-
-주제: 온도 및 습도 측정을 통해 특정 지역의 뎅기열 유행병 위험을 측정하는 웹사이트 설정.
+2학년 1학기 학기 프로젝트.
 
 사용 센서: 습도 센서 및 온도 센서
 
