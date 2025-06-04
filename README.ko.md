@@ -6,9 +6,10 @@
 
   
   
-팀원: Ana Flávia, Isabella Berkembrock, Michele Cristina Otta, Yejin Chung
+프로젝트 팀원: Ana Flávia, Isabella Berkembrock, Michele Cristina Otta, Yejin Chung
 
-2학년 1학기 학기 프로젝트.
+<h2>프로젝트 설명</h2>
+본 프로젝트는 온도 및 습도 데이터를 실시간으로 수집하는 센서를 기반으로, 뎅기열 발생 위험이 높은 지역의 환경 데이터를 분석하고 이를 바탕으로 감염병 발생 가능성을 예측 및 시각화하는 **스마트 감염병 예보 웹 플랫폼**을 구축하는 것을 목표로하며 수집된 데이터를 기반으로 위험도를 분석하고, LED 및 LCD 액추에이터를 활용해 사용자에게 직관적인 경고 및 정보를 제공합니다.
 
 사용 센서: 습도 센서 및 온도 센서
 
