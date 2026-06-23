@@ -60,7 +60,7 @@
 
 ---
 
-##  팀원 및 역할
+##  팀원
 
 **Yejin Chung** <br>
 **Ana Flávia** <br>
