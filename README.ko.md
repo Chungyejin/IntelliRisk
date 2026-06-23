@@ -63,6 +63,6 @@
 ##  팀원 및 역할
 
 **Yejin Chung** <br>
-**Ana Flávia** 
-**Isabella Berkembrock**
+**Ana Flávia** <br>
+**Isabella Berkembrock**<br>
 **Michele Cristina Otta** 
