@@ -1,6 +1,6 @@
 이 프로젝트는 여러 언어로 제공됩니다.
-- [🇺🇸 English](README.md)
-- [🇧🇷 Português](README.pt.md)
+- [English](README.md)
+- [Português](README.pt.md)
 
 ---
 
