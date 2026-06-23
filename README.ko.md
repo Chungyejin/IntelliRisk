@@ -1,19 +1,10 @@
-이 프로젝트는 여러 언어로 제공됩니다. / This project is available in multiple languages.
-- [🇰🇷 한국어 (Current)]()
+이 프로젝트는 여러 언어로 제공됩니다.
 - [🇺🇸 English](README.md)
 - [🇧🇷 Português](README.pt.md)
 
 ---
 
 <h1>🦟 IntelliRisk: 스마트 감염병 예보 플랫폼</h1>
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-</p>
 
 **IntelliRisk**는 IoT 하드웨어 시스템과 웹 플랫폼을 연동하여 특정 지역의 뎅기열 유행 위험을 실시간으로 지능형 모니터링하는 스마트 감염병 예보 플랫폼입니다. 
 
