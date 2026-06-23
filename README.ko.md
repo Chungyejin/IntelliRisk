@@ -62,9 +62,7 @@
 
 ##  팀원 및 역할
 
-| 이름 | 역할 | 담당 업무 및 기여도 |
-| :--- | :--- | :--- |
-| **Yejin Chung** | **Backend Developer** | - Flask 프레임워크 기반 RESTful API 엔드포인트 설계 및 연동<br>- ESP32 센서 데이터 수집을 위한 데이터 수신 및 파싱(Parsing) 로직 구현<br>- MySQL 관계형 데이터베이스 아키텍처 설계 및 리스크 이력 CRUD 쿼리 최적화 |
-| **Ana Flávia** | Embedded Developer | - ESP32 및 DHT11 센서 하드웨어 회로 설계 및 임베디드 소스 코드 작성 |
-| **Isabella Berkembrock** | Front-end Developer | - 웹 대시보드 UI/UX 가독성 개선 및 프론트엔드 컴포넌트 마크업 개발 |
-| **Michele Cristina Otta** | Full-Stack Developer | - 데이터 시각화 차트 연동 및 시스템 통합 테스트 수행 |
+**Yejin Chung** 
+**Ana Flávia** 
+**Isabella Berkembrock**
+**Michele Cristina Otta** 
