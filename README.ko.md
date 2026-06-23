@@ -1,30 +1,79 @@
-# IntelliRisk
+이 프로젝트는 여러 언어로 제공됩니다. / This project is available in multiple languages.
+- [🇰🇷 한국어 (Current)]()
+- [🇺🇸 English](README.md)
+- [🇧🇷 Português](README.pt.md)
 
-이 프로젝트는 여러 언어로 제공됩니다.
-- [English](README.md)
-- [Português](README.pt.md)
+---
 
-  
-  
-프로젝트 팀원: Ana Flávia, Isabella Berkembrock, Michele Cristina Otta, Yejin Chung
+<h1>🦟 IntelliRisk: 스마트 감염병 예보 플랫폼</h1>
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+</p>
 
-<h2>프로젝트 설명</h2>
-본 프로젝트는  하드웨어 시스템(ESP32, DHT11 센서, LED, LCD 디스플레이), 웹 시스템, 그리고 데이터베이스를 통합하여 특정 지역의 뎅기열 유행 위험을 지능적으로 모니터링하는 스마트 감염병 예보 플랫폼을 구축한다. 실시간으로 수집된 온도 및 습도 데이터를 분석하여 뎅기열 발생 가능성을 예측하고, 그 결과를 웹사이트를 통해 시각화합니다. 또한 LED 및 LCD를 통해 사용자에게 직관적인 경고 정보를 제공합니다.
+**IntelliRisk**는 IoT 하드웨어 시스템과 웹 플랫폼을 연동하여 특정 지역의 뎅기열 유행 위험을 실시간으로 지능형 모니터링하는 스마트 감염병 예보 플랫폼입니다. 
 
-<h3>사용 센서:</h3> 온도 센서(DHT11), 습도 센서(DHT11)
-<h3>사용 액추에이터:</h3> LED, LCD 디스플레이
-<h3>주요 사용 언어:</h3> HTML, CSS, Python (Flask), MySQL
+엣지 디바이스(ESP32)단에서 수집된 환경 데이터(온도·습도)를 분석하여 감염병 발생 가능성을 예측하고, 이를 데이터베이스화하여 웹 대시보드로 시각화합니다. 이와 동시에 엣지 단의 물리 액추에이터(LED, LCD)를 제어하여 로컬 환경에서도 직관적인 경고 정보를 동기화하는 엔드투엔드(End-to-End) 시스템입니다.
 
-<br><br>
+---
 
-![스크린샷 2024-07-25 203035](https://github.com/user-attachments/assets/638825a6-7b35-4d36-8c6a-6f54e289bc61)
-![스크린샷 2024-07-25 203105](https://github.com/user-attachments/assets/0316fda4-4dcb-4a0d-9499-e9d91f2c8fae)
-![스크린샷 2024-07-25 203151](https://github.com/user-attachments/assets/61cd375b-c995-4298-864b-a6bbff0a2424)
-![스크린샷 2024-07-25 203231](https://github.com/user-attachments/assets/18bcc3c1-5de0-4238-be01-ae33d8f90cfe)
-![스크린샷 2024-07-25 203240](https://github.com/user-attachments/assets/653192c4-7066-4d67-b99a-13b575ae5b11)
-![스크린샷 2024-07-25 203303](https://github.com/user-attachments/assets/57bde822-8a70-4d15-8af4-6a15fda5df34)
-![스크린샷 2024-07-25 203203](https://github.com/user-attachments/assets/e80a4598-8b3c-47c6-9b3b-41142cf1510f)
-![스크린샷 2024-07-25 203214](https://github.com/user-attachments/assets/6d0c5161-9b97-46a8-bef3-6ca369ec0bb0)
+## 🛠️ 하드웨어 구성 및 기술 스택 (System Components)
 
+* **하드웨어 및 센서 (Hardware & Sensors):** `ESP32` 메인 보드, `DHT11` 온습도 센서
+* **액추에이터 (Actuators):** 3색 경고 `LED`, 실시간 스태터스 표시용 `LCD 디스플레이`
+* **백엔드 아키텍처 (Backend):** `Python (Flask)` 기반 REST API 서버
+* **데이터 스토리지 (Database):** `MySQL` (시계열 환경 데이터 및 리스크 로그 저장)
 
+---
 
+## ⚙️ 핵심 기능 및 데이터 파이프라인 (Key Workflows)
+
+### 1. 실시간 데이터 수집 및 수신 (Data Ingestion)
+* ESP32에 탑재된 DHT11 센서가 주기적으로 온습도 데이터를 정밀 측정합니다.
+* 수집된 물리 데이터는 Wi-Fi 모듈을 통해 Flask 백엔드 서버의 REST API 엔드포인트로 전송됩니다.
+
+### 2. 리스크 분석 및 데이터베이스화 (Analysis & Storage)
+* Flask 서버는 수신된 데이터를 바탕으로 뎅기열 발생 위험 알고리즘을 연산합니다.
+* 연산된 리스크 등급 정보는 수집 시간 로그와 함께 MySQL DB에 안정적으로 적재(Insert)됩니다.
+
+### 3. 실시간 양방향 피드백 (Hardware & Web Sync)
+* **하드웨어 제어:** 위험도 결과에 따라 ESP32와 연결된 LCD 창의 텍스트가 가변 업데이트되며, 위험 등급별 경고 LED가 실시간으로 토글됩니다.
+* **웹 모니터링 대시보드:** 관리자 및 사용자는 웹 아키텍처를 통해 지역별 온습도 추이와 뎅기열 유행 위험도 통계를 한눈에 시각적으로 파악할 수 있습니다.
+
+---
+
+## 🖼️ 대시보드 및 시스템 스크린샷
+
+<table width="100%">
+  <tr>
+    <td width="50%"><img src="https://github.com/user-attachments/assets/638825a6-7b35-4d36-8c6a-6f54e289bc61" width="100%"/></td>
+    <td width="50%"><img src="https://github.com/user-attachments/assets/0316fda4-4dcb-4a0d-9499-e9d91f2c8fae" width="100%"/></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="https://github.com/user-attachments/assets/61cd375b-c995-4298-864b-a6bbff0a2424" width="100%"/></td>
+    <td width="50%"><img src="https://github.com/user-attachments/assets/18bcc3c1-5de0-4238-be01-ae33d8f90cfe" width="100%"/></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="https://github.com/user-attachments/assets/653192c4-7066-4d67-b99a-13b575ae5b11" width="100%"/></td>
+    <td width="50%"><img src="https://github.com/user-attachments/assets/57bde822-8a70-4d15-8af4-6a15fda5df34" width="100%"/></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="https://github.com/user-attachments/assets/e80a4598-8b3c-47c6-9b3b-41142cf1510f" width="100%"/></td>
+    <td width="50%"><img src="https://github.com/user-attachments/assets/6d0c5161-9b97-46a8-bef3-6ca369ec0bb0" width="100%"/></td>
+  </tr>
+</table>
+
+---
+
+## 👥 팀원 및 역할
+
+| 이름 | 역할 | 담당 업무 및 기여도 |
+| :--- | :--- | :--- |
+| **Yejin Chung** | **Backend Developer** | - Flask 프레임워크 기반 RESTful API 엔드포인트 설계 및 연동<br>- ESP32 센서 데이터 수집을 위한 데이터 수신 및 파싱(Parsing) 로직 구현<br>- MySQL 관계형 데이터베이스 아키텍처 설계 및 리스크 이력 CRUD 쿼리 최적화 |
+| **Ana Flávia** | Embedded Developer | - ESP32 및 DHT11 센서 하드웨어 회로 설계 및 임베디드 소스 코드 작성 |
+| **Isabella Berkembrock** | Front-end Developer | - 웹 대시보드 UI/UX 가독성 개선 및 프론트엔드 컴포넌트 마크업 개발 |
+| **Michele Cristina Otta** | Full-Stack Developer | - 데이터 시각화 차트 연동 및 시스템 통합 테스트 수행 |
