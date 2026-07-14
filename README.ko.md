@@ -64,7 +64,7 @@
 
 | 이름 | 역할 | 담당 업무  |
 | :--- | :--- | :--- |
-| **Yejin Chung** | **Backend Engineer** | • Flask 기반 REST API 서버 설계 및 구현<br>• 온습도 데이터 수신 및 뎅기열 위험도 연산 알고리즘 개발<br>• MySQL 데이터베이스 스키마 설계 및 시계열 데이터 적재(Insert) 관리 |
+| **Yejin Chung** | **Backend Engineer** | • Flask 기반 REST API 서버 설계 및 구현<br>• 온습도 데이터 수신 및 뎅기열 위험도 연산 알고리즘 개발<br>• 
 | **Ana Flávia** | **IoT / Embedded** | • ESP32 디바이스 펌웨어 개발 및 DHT11 센서 제어<br>• Wi-Fi 데이터 전송 모듈 구현<br>• 리스크 등급별 3색 경고 LED 토글 및 LCD 디스플레이 연동 |
 | **Isabella Berkembrock** | **PM / QA Engineer**| • 프로젝트 일정 관리 및 시스템 아키텍처 기획<br>• IoT 하드웨어-서버-웹 대시보드 간 엔드투엔드 통합 테스트 및 디버깅<br>• 데이터 정합성 검증 및 예외 상황 대응 시나리오 수립 |
 | **Michele Cristibna Otta** | **Frontend Engineer** |• 웹 모니터링 대시보드 UI/UX 설계 및 개발<br>• 지역별 온습도 추이 및 뎅기열 위험도 통계 시각화 화면 구현<br>• Backend API 연동을 통한 실시간 데이터 업데이트 |
