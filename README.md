@@ -85,10 +85,6 @@ IntelliRisk-main/
 | :---: | :---: |
 | ![Conceptual Model](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/diagrams/architecture.jpg)  | ![Physical Schema](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/database/logical_model.png?raw=true)  |
 
-
-
-<br>
-
 ### 3. 시스템 화면
 | 화면 1 | 화면 2 |
 | :---: | :---: |
