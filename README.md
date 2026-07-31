@@ -4,14 +4,14 @@
 
 ---
 
-## 📌 Project Overview (프로젝트 개요)
+## 📌 프로젝트 개요
 
 뎅기를 발생시키는 모기의 서식 환경은 온도 및 습도와 같은 기상 조건에 큰 영향을 받습니다.  
 **IntelliRisk**는 엣지 디바이스(ESP32)에서 센서 데이터를 측정하여 MQTT 브로커로 전송하고, Flask 백엔드 서버에서 이를 가공·저장하여 웹 실시간 모니터링 및 원격 제어를 가능하게 하는 통합 시스템입니다.
 
 ---
 
-## 💡 What Problem Does It Solve? (해결하려는 문제)
+## 💡기능
 
 * **실시간 데이터 수집 및 시각화**: ESP32 센서로부터 전송되는 실시간 환경 데이터를 웹 대시보드에서 즉각 확인
 * **데이터 영속성 확보**: 수집된 센서 수치 및 원격 제어 이력을 관계형 데이터베이스(MySQL)에 안전하게 기록 및 분석 기반 마련
@@ -20,7 +20,7 @@
 
 ---
 
-## 🛠 Tech Stack (기술 스택)
+## 🛠 기술 스택
 
 | 분류 | 기술 스택 |
 | :--- | :--- |
@@ -31,7 +31,7 @@
 
 ---
 
-## 🏗 System Architecture (시스템 구조)
+## 🏗 시스템 구조
 
 ```text
 [ ESP32 + 센서 ] ──(MQTT Publish)──> [ MQTT Broker ]
@@ -50,7 +50,7 @@
 
 ---
 
-## 📁 Application Structure (코드 구조)
+## 📁 코드 구조
 
 `app/` 내부를 역할에 맞게 분리하여 서비스가 확장되더라도 독립적인 수정이 가능하도록 모듈화했습니다.
 
@@ -73,11 +73,11 @@ IntelliRisk-main/
 ```
 
 ---
-# 🗄️ Database Architecture
+# 🗄️데이터베이스 구조
 
 프로젝트의 데이터베이스 구조는 개념적 ERD 설계를 거쳐 관계형 데이터베이스 스키마로 구현되었습니다.
 
-### 1. Conceptual Model (ERD)
+### 1. ERD
 시스템의 핵심 엔티티(Users, Devices, Sensors, Actuators)와 엔티티 간의 관계(1:N, 상속/개념적 분리)를 정의한 개념 모델입니다.
 
 ![Conceptual Model](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/diagrams/architecture.jpg) 
@@ -90,7 +90,7 @@ IntelliRisk-main/
 
 ---
 
-### 2. Physical Database Schema
+### 2. 물리적 데이터 베이스 스키마
 개념 모델을 바탕으로 실제 RDBMS(MySQL) 테이블, 데이터 타입, 외래키(FK) 관계 및 제약 조건을 반영한 물리적 스키마입니다.
 
 ![Physical Schema](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/database/logical_model.png?raw=true) 
