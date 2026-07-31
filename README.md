@@ -74,7 +74,6 @@ IntelliRisk-main/
 
 ---
 ## 📸 스크린 샷
-<br>
 
 ### Conceptual Model (ERD) & Physical Schema
 
