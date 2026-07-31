@@ -86,27 +86,6 @@ IntelliRisk-main/
 
 ---
 
-## 📡 MQTT Topics & Data Model
-
-### MQTT Topics (예시)
-
-* `dengue1`, `dengue2`, `dengue3`: 각 구역별 센서 수치 수집 토픽
-* `topico_led`: 원격 액추에이터/LED 상태 제어 토픽
-
-### Data Model (영속성 관리)
-
-* **Sensor Readings**: 토픽명, 타임스탬프, 측정값, 메타데이터 저장
-* **Actuator Events**: 토픽명, 제어 일시, 제어 명령 내역 기록
-* **Users & Roles**: 역할 기반 권한 제어(RBAC)를 위한 사용자 및 권한 데이터
-
----
-
-## 🔒 Security & Configuration Notes
-
-* **환경변수 분리**: DB 접속 정보 및 비밀키(Secret Key) 등 민감 정보는 소스코드 외부에 환경변수로 관리
-* **중앙화된 에러 처리**: `error_handlers.py`를 통해 예외 상황에서도 서버 중단 없이 일관된 에러 응답 제공
-* **안전한 DB 스키마 관리**: 초기화 시 파괴적인 쿼리(`DROP TABLE`)를 지양하고 멱등성을 지닌 데이터베이스 세팅 준수
-
 ## Team & Roles (팀원 및 담당 업무)
 
 | 이름 | Role | Key Contributions |
