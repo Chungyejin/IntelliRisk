@@ -27,7 +27,7 @@
 | **Hardware / IoT** | ESP32, MQTT Protocol |
 | **Backend** | Python, Flask|
 | **Database** | MySQL |
-| **Frontend** | HTML5, CSS3, JavaScript  |
+| **Frontend** | HTML, CSS, JavaScript  |
 
 ---
 
