@@ -1,4 +1,3 @@
-```markdown
 # 🦟 IntelliRisk — Dengue Risk Monitoring (ESP32 + Flask + MySQL + MQTT)
 
 > **ESP32, Flask, MySQL, MQTT**를 결합하여 온·습도 등 환경 데이터를 실시간으로 수집·분석하고, 액추에이터 제어까지 연결한 **End-to-End IoT 풀스택 프로젝트**입니다.
