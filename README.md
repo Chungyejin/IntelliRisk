@@ -73,7 +73,32 @@ IntelliRisk-main/
 ```
 
 ---
+# 🗄️ Database Architecture
 
+프로젝트의 데이터베이스 구조는 개념적 ERD 설계를 거쳐 관계형 데이터베이스 스키마로 구현되었습니다.
+
+### 1. Conceptual Model (ERD)
+시스템의 핵심 엔티티(Users, Devices, Sensors, Actuators)와 엔티티 간의 관계(1:N, 상속/개념적 분리)를 정의한 개념 모델입니다.
+
+![Conceptual Model](./assets/conceptual-erd.png) <!-- 이미지 파일 경로 지정 -->
+
+* **Users & Roles**: 사용자 권한 관리 (1:N)
+* **Devices (Generalization)**: 디바이스 공통 속성 정의 및 Actuator/Sensor 상속 관계 구축
+* **Telemetry Data**:
+  * **Sensors → Read**: 센서 측정 데이터 이력 관리 (1:N)
+  * **Actuators → Write**: 액추에이터 제어/동작 기록 관리 (1:N)
+
+---
+
+### 2. Physical Database Schema
+개념 모델을 바탕으로 실제 RDBMS(MySQL) 테이블, 데이터 타입, 외래키(FK) 관계 및 제약 조건을 반영한 물리적 스키마입니다.
+
+![Physical Schema](./assets/physical-schema.png) <!-- 이미지 파일 경로 지정 -->
+
+* **Devices / Actuators / Sensors**: `devices_id` (FK)를 통해 디바이스 기본 정보와 세부 속성 연결
+* **Read / Write Log**: `sensors_id`, `actuators_id` (FK) 및 `DATETIME` 타임스탬프 기반 데이터 링킹
+
+---
 ## 🌐 주요 엔드포인트
 
 * **`GET /`** : 메인 홈 페이지
