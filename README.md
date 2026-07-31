@@ -25,7 +25,7 @@
 | 분류 | 기술 스택 |
 | :--- | :--- |
 | **Hardware / IoT** | ESP32, MQTT Protocol |
-| **Backend** | Python, Flask, SQLAlchemy |
+| **Backend** | Python, Flask|
 | **Database** | MySQL |
 | **Frontend** | HTML5, CSS3, JavaScript  |
 
