@@ -75,8 +75,6 @@ IntelliRisk-main/
 ---
 ## 📸 스크린 샷
 
-### Conceptual Model (ERD) & Physical Schema
-
 ### 1. ERD
 시스템의 핵심 엔티티(Users, Devices, Sensors, Actuators)와 엔티티 간의 관계(1:N, 상속/개념적 분리)를 정의한 개념 모델입니다.
 
@@ -91,7 +89,7 @@ IntelliRisk-main/
 
 <br>
 
-### 시스템 화면
+### 3. 시스템 화면
 | 화면 1 | 화면 2 |
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/638825a6-7b35-4d36-8c6a-6f54e289bc61" width="100%"> |<img src="https://github.com/user-attachments/assets/0316fda4-4dcb-4a0d-9499-e9d91f2c8fae" width="100%">|
