@@ -107,4 +107,11 @@ IntelliRisk-main/
 * **중앙화된 에러 처리**: `error_handlers.py`를 통해 예외 상황에서도 서버 중단 없이 일관된 에러 응답 제공
 * **안전한 DB 스키마 관리**: 초기화 시 파괴적인 쿼리(`DROP TABLE`)를 지양하고 멱등성을 지닌 데이터베이스 세팅 준수
 
-```
+## Team & Roles (팀원 및 담당 업무)
+
+| 이름 | Role | Key Contributions |
+|---|---|---|
+| **Yejin Chung** | **Backend Engineer** | • Flask 기반 RESTful API 아키텍처 설계 및 구현<br>• 온·습도 수치 기반 뎅기열 위험도 연산 알고리즘 개발<br>• DB 트랜잭션 최적화 및 API 응답속도 향상 |
+| **Ana Flávia** | **IoT / Embedded** | • ESP32 펌웨어 구현 및 DHT11 센서 제어 로직 작성<br>• Wi-Fi HTTP 통신 모듈 및 데이터 재전송 예외 로직 구현<br>• 경고 등급별 LED/LCD 제어 액추에이터 동기화 |
+| **Isabella Berkembrock** | **PM / QA Engineer** | • E2E 데이터 파이프라인 통합 테스트 및 QA 시나리오 수립<br>• 센서-서버-웹 데이터 정합성 검증 및 예외 상황 대응<br>• 일정 관리 및 프로젝트 마일스톤 추적 |
+| **Michele Cristibna Otta** | **Frontend Engineer** | • 모니터링 대시보드 UI/UX 라우팅 및 레이아웃 구성<br>• Chart.js를 활용한 시계열 온·습도 및 위험도 통계 시각화<br>• 실시간 데이터 대시보드 폴링/소켓 연동 |
