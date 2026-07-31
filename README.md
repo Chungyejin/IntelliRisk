@@ -44,7 +44,7 @@
 
 1. **ESP32 + sensors**: 센서 측정값을 MQTT 토픽으로 주기적 발행
 2. **MQTT broker**: 메시지 루팅 및 비동기 이벤트 전달
-3. **Flask backend**: 토픽 구독(Subscribe), 페이로드 디코딩, 인메모리 상태 업데이트(`state.py`) 및 DB 영속화
+3. **Flask backend**: 토픽 구독(Subscribe), 페이로드 디코딩, 인메모리 상태 업데이트 및 DB 영속화
 4. **Database (MySQL via SQLAlchemy)**: 센서 수치, 액추에이터 이벤트, 유저/권한 데이터 관리
 5. **Web UI**: 실시간 대시보드 렌더링 및 제어 인터페이스 제공
 
