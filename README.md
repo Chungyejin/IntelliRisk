@@ -25,10 +25,9 @@
 | 분류 | 기술 스택 |
 | :--- | :--- |
 | **Hardware / IoT** | ESP32, MQTT Protocol |
-| **Backend** | Python 3.x, Flask (Application Factory), SQLAlchemy |
+| **Backend** | Python, Flask, SQLAlchemy |
 | **Database** | MySQL |
-| **Frontend** | HTML5, CSS3, JavaScript (Jinja2 Template Engine) |
-| **Architecture** | Event-Driven Architecture (via MQTT), Role-Based Access Control |
+| **Frontend** | HTML5, CSS3, JavaScript  |
 
 ---
 
