@@ -96,7 +96,7 @@ IntelliRisk-main/
 ![Physical Schema](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/database/logical_model.png?raw=true) 
 
 ---
-## 📸 Screenshots & UI Breakdown
+## 스크린 샷
 ---
 ## 🌐 주요 엔드포인트
 
