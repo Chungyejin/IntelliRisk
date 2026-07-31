@@ -73,36 +73,19 @@ IntelliRisk-main/
 ```
 
 ---
-# 🗄️데이터베이스 구조
-
-프로젝트의 데이터베이스 구조는 개념적 ERD 설계를 거쳐 관계형 데이터베이스 스키마로 구현되었습니다.
-
-### 1. ERD
-시스템의 핵심 엔티티(Users, Devices, Sensors, Actuators)와 엔티티 간의 관계(1:N, 상속/개념적 분리)를 정의한 개념 모델입니다.
-
-![Conceptual Model](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/diagrams/architecture.jpg) 
-
-* **Users & Roles**: 사용자 권한 관리 (1:N)
-* **Devices (Generalization)**: 디바이스 공통 속성 정의 및 Actuator/Sensor 상속 관계 구축
-* **Telemetry Data**:
-  * **Sensors → Read**: 센서 측정 데이터 이력 관리 (1:N)
-  * **Actuators → Write**: 액추에이터 제어/동작 기록 관리 (1:N)
-
----
-
-### 2. 물리적 데이터 베이스 스키마
-개념 모델을 바탕으로 실제 RDBMS(MySQL) 테이블, 데이터 타입, 외래키(FK) 관계 및 제약 조건을 반영한 물리적 스키마입니다.
-
-![Physical Schema](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/database/logical_model.png?raw=true) 
-
----
 ## 📸 스크린 샷
 <br>
 
 ### 1. Conceptual Model (ERD) & Physical Schema
 | Conceptual Model (ERD) | Physical Database Schema |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/638825a6-7b35-4d36-8c6a-6f54e289bc61" width="100%"> | <img src="https://github.com/user-attachments/assets/0316fda4-4dcb-4a0d-9499-e9d91f2c8fae" width="100%"> |
+| ![Conceptual Model](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/diagrams/architecture.jpg)  | ![Physical Schema](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/database/logical_model.png?raw=true)  |
+
+### 1. ERD
+시스템의 핵심 엔티티(Users, Devices, Sensors, Actuators)와 엔티티 간의 관계(1:N, 상속/개념적 분리)를 정의한 개념 모델입니다.
+
+### 2. 물리적 데이터 베이스 스키마
+개념 모델을 바탕으로 실제 RDBMS(MySQL) 테이블, 데이터 타입, 외래키(FK) 관계 및 제약 조건을 반영한 물리적 스키마입니다.
 
 <br>
 
