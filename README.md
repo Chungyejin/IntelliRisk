@@ -76,20 +76,28 @@ IntelliRisk-main/
 ## 📸 스크린 샷
 <br>
 
-### 1. Conceptual Model (ERD) & Physical Schema
-| Conceptual Model (ERD) | Physical Database Schema |
-| :---: | :---: |
-| ![Conceptual Model](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/diagrams/architecture.jpg)  | ![Physical Schema](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/database/logical_model.png?raw=true)  |
+### Conceptual Model (ERD) & Physical Schema
 
 ### 1. ERD
 시스템의 핵심 엔티티(Users, Devices, Sensors, Actuators)와 엔티티 간의 관계(1:N, 상속/개념적 분리)를 정의한 개념 모델입니다.
 
 ### 2. 물리적 데이터 베이스 스키마
+
 개념 모델을 바탕으로 실제 RDBMS(MySQL) 테이블, 데이터 타입, 외래키(FK) 관계 및 제약 조건을 반영한 물리적 스키마입니다.
+| Conceptual Model (ERD) | Physical Database Schema |
+| :---: | :---: |
+| ![Conceptual Model](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/diagrams/architecture.jpg)  | ![Physical Schema](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/database/logical_model.png?raw=true)  |
+
+
 
 <br>
 
-### 2. Application Screenshots
+### Application Screenshots
+| 화면 1 | 화면 2 |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/638825a6-7b35-4d36-8c6a-6f54e289bc61" width="100%"> |<img src="https://github.com/user-attachments/assets/0316fda4-4dcb-4a0d-9499-e9d91f2c8fae" width="100%">|
+
+
 | 화면 1 | 화면 2 |
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/61cd375b-c995-4298-864b-a6bbff0a2424" width="100%"> | <img src="https://github.com/user-attachments/assets/e80a4598-8b3c-47c6-9b3b-41142cf1510f" width="100%"> |
