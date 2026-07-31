@@ -1,4 +1,4 @@
-# 🦟 IntelliRisk — Dengue Risk Monitoring 
+# 🦟 IntelliRisk — IoT 하드웨어 연동형 감염병 위험 예측 플랫폼
 
 > **ESP32, Flask, MySQL, MQTT**를 결합하여 온·습도 등 환경 데이터를 실시간으로 수집·분석하고, 액추에이터 제어까지 연결한 **IoT 풀스택 프로젝트**입니다.
 
