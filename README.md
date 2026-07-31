@@ -95,9 +95,6 @@ IntelliRisk-main/
 
 ![Physical Schema](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/database/logical_model.png?raw=true) 
 
-* **Devices / Actuators / Sensors**: `devices_id` (FK)를 통해 디바이스 기본 정보와 세부 속성 연결
-* **Read / Write Log**: `sensors_id`, `actuators_id` (FK) 및 `DATETIME` 타임스탬프 기반 데이터 링킹
-
 ---
 ## 🌐 주요 엔드포인트
 
