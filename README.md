@@ -80,7 +80,7 @@ IntelliRisk-main/
 ### 1. Conceptual Model (ERD)
 시스템의 핵심 엔티티(Users, Devices, Sensors, Actuators)와 엔티티 간의 관계(1:N, 상속/개념적 분리)를 정의한 개념 모델입니다.
 
-![Conceptual Model](./assets/conceptual-erd.png) <!-- 이미지 파일 경로 지정 -->
+![Conceptual Model](https://github.com/Chungyejin/IntelliRisk/blob/main/docs/diagrams/architecture.jpg) <!-- 이미지 파일 경로 지정 -->
 
 * **Users & Roles**: 사용자 권한 관리 (1:N)
 * **Devices (Generalization)**: 디바이스 공통 속성 정의 및 Actuator/Sensor 상속 관계 구축
